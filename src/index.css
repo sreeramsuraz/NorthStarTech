@@ -1,0 +1,58 @@
+:root {
+  --color-primary: #243041;
+  --color-accent: #4EA5D9;
+  --color-background: #FAF7F0;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: var(--color-primary);
+  background: var(--color-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+
+button, input, select, textarea { font: inherit; }
+
+a { color: inherit; }
+
+button,
+a,
+input,
+select,
+textarea,
+[role="button"] {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+button:not(:disabled):hover,
+a:hover,
+[role="button"]:hover,
+input:focus,
+select:focus,
+textarea:focus {
+  transform: scale(1.025);
+}
+
+button:not(:disabled):active,
+a:active,
+[role="button"]:active {
+  transform: scale(0.97);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid rgba(78, 165, 217, 0.32);
+  outline-offset: 3px;
+}
